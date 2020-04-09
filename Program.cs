@@ -11,7 +11,14 @@ namespace cSharp_DojoCorp
 
             Hero player = PlayerSetup();
             
-            ConsoleCyan($"Congratulations {player.Name}!!! You have landed your first job after graduation and are excited to hit the ground running to show your new team that you know what you are doing.\n\nAfter some brief introductions and HR nonsense, you quickly realize that you must work hard to complete everything that your new boss is throwing at you.  From TPS reports and spreedsheets to making sure you make that meeting on time, you need to keep on top of your work or you will be terminiated.  Will you survive your first day!?!");
+            ConsoleCyan($"Congratulations {player.Name}!!! You have landed your first job after graduation and are excited to hit the ground running to show your new team that you know what you are doing.\n\nAfter some brief introductions and HR nonsense, you quickly realize that you must work hard to complete everything that your new boss is throwing at you.  From TPS reports and spreedsheets to making sure you make that meeting on time, you need to keep on top of your work or you will be terminiated.  Will you survive your first day!?!\n\nPress Enter to Start");
+
+            ConsoleKey key  = Console.ReadKey(true).Key;
+            while(key != ConsoleKey.Enter)
+            {
+                key  = Console.ReadKey(true).Key;
+            }
+            Console.WriteLine("BEGIN YOUR ADVENTURE HERE!!!");
 
             //write a method that will create other team mates.
 
